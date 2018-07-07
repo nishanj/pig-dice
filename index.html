@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.0.0.js"></script>
   <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
   <title>Pig Dice Fourth Project</title>
@@ -18,14 +17,17 @@
     <p><i>The fourth week of Outbox EDU Moringa prep program is about excersing the use of  JavaScript programming skills with
       constructors, prototypes, objects, properties, methods, jQuery and DOM manipulation and traversal.</i></p>
 
-
+<div class="row">
+  <div class="col-md-6">
     <form id="player-one">
       <div class="form-group">
         <label for="player-name-a">PLAYER ONE:</label>
         <input class="form-group-lg .form-control " type="text" placeholder="Name" id="player-name-a">
       </div>
     </form>
+  </div>
 
+      <div class="col-md-6">
     <form id="player-two">
       <div class="form-group">
         <label for="player-name-b">PLAYER TWO:</label>
@@ -34,6 +36,8 @@
     </form>
 
     <button id="start" class="btn-warning btn">Start</button>
+  </div>
+</div>
 
   </div>
 
@@ -47,8 +51,8 @@
             <h2>Player 1: <span id = "player-name-a"><span></h2>
 
               <button id="player-a-roll" class="btn-warning btn">Roll</button>
-              <button id="player-a-hold" class="btn-warning btn">Hold</button>
-              
+              <button id="player-a-hold" class="btn-success btn">Hold</button>
+
               <h2>Dice Roll: <span id="dice-roll"></span></h2>
               <p>Round Total: <span id="round-total"></span></p>
               <p>Total Score: <span id="total-score"></span></p>
@@ -56,6 +60,15 @@
           </div>
 
           <div class="col-md-6">
+
+            <h2>Player 1: <span id = "player-name-b"><span></h2>
+
+              <button id="player-b-roll" class="btn-danger btn">Roll</button>
+              <button id="player-b-hold" class="btn-info btn">Hold</button>
+
+              <h2>Dice Roll: <span id="dice-roll-b"></span></h2>
+              <p>Round Total: <span id="round-total-b"></span></p>
+              <p>Total Score: <span id="total-score-b"></span></p>
           </div>
 
         </div>
