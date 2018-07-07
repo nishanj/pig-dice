@@ -7,4 +7,14 @@
 }
 html, body{
   font-family: 'Lato', sans-serif;
+  background-color: gray;
+}
+#ply2{
+  background-color: #F1F6E6;
+}
+#ply1{
+  background-color: #EEE7F9;
+}
+#bdy{
+  background-color: #FADCB0;
 }
