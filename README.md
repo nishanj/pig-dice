@@ -9,14 +9,14 @@
 #Pig DICE is a simple dice game which in its basic form is playable with just a single die.You win by being the first player to score 100 or more points
 
 #Spec/specification:
-# create a player class name
-# create start and new button
-# create a form to enter name
-# points at first roll points and total
-# roll the dice or hold use of random method to generate the number
-# display the score x score next to player name  use of condition statements (if and else)
-# add the points
-# once @ 100 = fireworks
+#create a player class name
+#create start and new button
+#create a form to enter name
+#points at first roll points and total
+#roll the dice or hold use of random method to generate the number
+#display the score x score next to player name  use of condition statements (if and else)
+#add the points
+#once @ 100 = fireworks
 
 #Terms of USE:
 
