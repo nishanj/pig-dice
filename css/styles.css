@@ -1,5 +1,5 @@
 #game-selector {
-  display:
+  display: none;
 
 }
 #start{
@@ -16,5 +16,14 @@ html, body{
   background-color: #EEE7F9;
 }
 #bdy{
+  margin-top: 60px;
   background-color: #FADCB0;
+}
+h1{
+  text-align: center;
+}
+footer{
+  text-align: center;
+  margin-top: 30%;
+  color: white;
 }
