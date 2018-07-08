@@ -75,39 +75,41 @@ $(document).ready(function(){
 
 });
     $("#new-game").click(function(event){
-    $("#game-selector").hide();
+    $("#game-selector").show();
     ClearValues();
 
-    player1.newGame();
-    player2.newGame();
+    playerA.newGame();
+    playerB.newGame();
 
     $("#dice-roll").empty();
     $("#round-total").empty();
     $("#total-score").empty();
 
-    $("#die-roll-2").empty();
-    $("#round-total-2").empty();
-    $("#total-score-2").empty();
+    $("#dice-roll-b").empty();
+    $("#round-total-b").empty();
+    $("#total-score-b").empty();
 
 
-    $(".start-menu").show();
+    $("#game-selector").show();
 
 });
     $("button#player-a-roll").click(function(event){
-      playerA.roll = rollDice();
+      playerA.roll = rollCheck();
 
     $("#dice-roll").text(playerA.roll);
       playerA.rollCheck();
 
     $("#round-total").text(playerA.tempscore);
 });
-    $("button#player-b-roll").click(function(event){
-      playerB.roll = rollDice();
 
-      $("#dice-roll-2").text(playerB.roll);
+
+    $("button#player-b-roll").click(function(event){
+      playerB.roll = rollCheck();
+
+    $("#dice-roll-b").text(playerB.roll);
       playerB.rollCheck();
 
-      $("#round-total-2").text(playerB.tempscore);
+    $("#round-total-2").text(playerB.tempscore);
 });
 
 
@@ -122,9 +124,9 @@ $(document).ready(function(){
 
       $("button#player-b-hold").click(function(event){
         playerB.holdCheck();
-        $("#total-score-2").text(playerB.totalscore);
-        $("#round-total-2").empty();
-        $("#dice-roll-2").empty();
+        $("#total-score-b").text(playerB.totalscore);
+        $("#round-total-b").empty();
+        $("#dice-roll-b").empty();
         playerB.winnerCheck();
 
   });
