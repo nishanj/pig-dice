@@ -47,6 +47,12 @@ this.totalscore = 0;
 this.playerName = "";
 }
 
+var clearValues = function(){
+$(".player1Name").val("");
+$(".player2Name").val("");
+}
+
+
 // UI Logic
 $(document).ready(function(){
   $("#start").click(function(event){
@@ -57,6 +63,27 @@ $(document).ready(function(){
 
     $("#game-selector").show();
     $("#bdy").hide();
+
+    var player1Name = $(".player-name-1").val();
+    $("#player-name-1").text(player1Name);
+
+    var player2Name = $(".player-name-2").val();
+    $("#player-name-1").text(player2Name);
+
+    playerA.playerName=player1Name;
+    playerB.playerName=player2Name;
+
+});
+    $("#new-game").click(function(event){
+    $("#game-selector").hide();
+    ClearValues();
+
+    player1.newGame();
+    player2.newGame();
+
+
+
+
 
 
   })
