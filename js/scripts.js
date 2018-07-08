@@ -14,6 +14,7 @@ this.turn = turn;
 this.playerName;
 }
 
+// prototype Logic
 // checking for roll  one
 Player.prototype.rollCheck = function() {
 if (this.roll === 1) {
