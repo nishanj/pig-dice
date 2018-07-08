@@ -81,6 +81,26 @@ $(document).ready(function(){
     player1.newGame();
     player2.newGame();
 
+    $("#dice-roll").empty();
+    $("#round-total").empty();
+    $("#total-score").empty();
+
+    $("#die-roll-2").empty();
+    $("#round-total-2").empty();
+    $("#total-score-2").empty();
+
+
+    $(".start-menu").show();
+
+});
+    $("button#player-a-roll").click(function(event){
+      player1.roll = rollDice();
+
+      $("#dice-roll").text(player1.roll);
+      player1.rollCheck();
+
+      $("#round-total").text(player1.tempscore);
+});
 
 
 
