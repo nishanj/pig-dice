@@ -94,26 +94,38 @@ $(document).ready(function(){
 
 });
     $("button#player-a-roll").click(function(event){
-      player1.roll = rollDice();
+      playerA.roll = rollDice();
 
-    $("#dice-roll").text(player1.roll);
-      player1.rollCheck();
+    $("#dice-roll").text(playerA.roll);
+      playerA.rollCheck();
 
-    $("#round-total").text(player1.tempscore);
+    $("#round-total").text(playerA.tempscore);
 });
     $("button#player-b-roll").click(function(event){
-      player2.roll = rollDice();
+      playerB.roll = rollDice();
 
-      $("#dice-roll-2").text(player2.roll);
-      player2.rollCheck();
+      $("#dice-roll-2").text(playerB.roll);
+      playerB.rollCheck();
 
-      $("#round-total-2").text(player2.tempscore);
+      $("#round-total-2").text(playerB.tempscore);
 });
 
 
+      $("button#player-a-hold").click(function(event){
+      playerA.holdCheck();
+      $("#total-score").text(playerA.totalscore);
+      $("#round-total").empty();
+      $("#dice-roll").empty();
+      playerA.winnerCheck();
+});
 
 
+      $("button#player-b-hold").click(function(event){
+        playerB.holdCheck();
+        $("#total-score-2").text(playerB.totalscore);
+        $("#round-total-2").empty();
+        $("#dice-roll-2").empty();
+        playerB.winnerCheck();
 
-
-  })
-})
+  });
+});
