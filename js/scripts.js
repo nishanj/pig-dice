@@ -75,7 +75,7 @@ $(document).ready(function(){
 
 });
     $("#new-game").click(function(event){
-    $("#game-selector").show();
+    $("#game-selector").hide();
     ClearValues();
 
     playerA.newGame();
@@ -105,7 +105,7 @@ $(document).ready(function(){
       playerB.roll = rollDice();
     $("#dice-roll-b").text(playerB.roll);
       playerB.rollCheck();
-    $("#round-total-2").text(playerB.tempscore);
+    $("#round-total-b").text(playerB.tempscore);
 });
 
 
@@ -118,7 +118,7 @@ $(document).ready(function(){
 });
 
 
-      $("button#player-b-hold").click(function(event){
+      $("#player-b-hold").click(function(event){
         playerB.holdCheck();
         $("#total-score-b").text(playerB.totalscore);
         $("#round-total-b").empty();
