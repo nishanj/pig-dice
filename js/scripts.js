@@ -6,7 +6,7 @@ var rollDice = function() {
 return Math.floor(6 * Math.random()) + 1;
 }
 
-function Player(roll, tempscore, totalscore, turn) {
+function Player(turn) {
 this.roll = 0;
 this.tempscore = 0;
 this.totalscore = 0;
@@ -48,8 +48,8 @@ this.playerName = "";
 }
 
 var clearValues = function(){
-$(".player1Name").val("");
-$(".player2Name").val("");
+$(".player-name-1").val("");
+$(".player-name-2").val("");
 }
 
 
@@ -94,21 +94,17 @@ $(document).ready(function(){
 
 });
     $("button#player-a-roll").click(function(event){
-      playerA.roll = rollCheck();
-
+      playerA.roll = rollDice();
     $("#dice-roll").text(playerA.roll);
       playerA.rollCheck();
-
     $("#round-total").text(playerA.tempscore);
 });
 
 
     $("button#player-b-roll").click(function(event){
-      playerB.roll = rollCheck();
-
+      playerB.roll = rollDice();
     $("#dice-roll-b").text(playerB.roll);
       playerB.rollCheck();
-
     $("#round-total-2").text(playerB.tempscore);
 });
 
