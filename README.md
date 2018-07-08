@@ -1,10 +1,10 @@
-# PIG DICE Project
+#PIG DICE Project
 
 #Developed By; Joseph obure
 
 #HTML, CSS, JavaScript, BOOTSTRAP and JQUERY as Languages Used for developing the Pig Dice.
 
-#Pig dice only requests active internet, browser then enter link https://nishanj.github.io/pig-dice/
+#Pig dice only requests active internet, browser then enter link https://nishanj.github.io/pig-dice/ and then follow game instruction
 
 #Pig DICE is a simple dice game which in its basic form is playable with just a single die.You win by being the first player to score 100 or more points
 
@@ -18,8 +18,7 @@
 # add the points
 # once @ 100 = fireworks
 
-#Pig Dice Game is developed as web application that takes a number from the a user(s) and returns a number or a word in others it ranges from one to the given number with following exception and should be divisible to three, five and fifteen and returning numbers and ping, pong as well as ping-pong
-
+#Terms of USE:
 
 #Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -27,7 +26,7 @@
 
 #THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#To find more about the Ping Pong Play, please follow the link:https://nishanj.github.io/ping-pong-project/
-#link to github https://github.com/nishanj/ping-pong-project.git
+#To find more about the Ping Pong Play, please follow the link:https://nishanj.github.io/pig-dice/
+#link to github https://github.com/nishanj/pig-dice.git
 
 #Copyright (c) 2018 Joseph Obure
