@@ -96,11 +96,20 @@ $(document).ready(function(){
     $("button#player-a-roll").click(function(event){
       player1.roll = rollDice();
 
-      $("#dice-roll").text(player1.roll);
+    $("#dice-roll").text(player1.roll);
       player1.rollCheck();
 
-      $("#round-total").text(player1.tempscore);
+    $("#round-total").text(player1.tempscore);
 });
+    $("button#player-b-roll").click(function(event){
+      player2.roll = rollDice();
+
+      $("#dice-roll-2").text(player2.roll);
+      player2.rollCheck();
+
+      $("#round-total-2").text(player2.tempscore);
+});
+
 
 
 
