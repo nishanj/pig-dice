@@ -52,5 +52,12 @@ $(document).ready(function(){
   $("#start").click(function(event){
     event.preventDefault();
 
+    playerA = new Player(true);
+    playerB = new Player(false);
+
+    $("#game-selector").show();
+    $("#bdy").hide();
+
+
   })
 })
