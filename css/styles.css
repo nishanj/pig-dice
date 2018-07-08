@@ -1,5 +1,5 @@
 #game-selector {
-  display: none;
+  display:none;
 
 }
 #start{
@@ -8,6 +8,16 @@
 html, body{
   font-family: 'Lato', sans-serif;
   background-color: gray;
+}
+h6{
+  padding-top: 20px;
+}
+#bdy2{
+  padding-top: 20px;
+}
+.rule{
+  color: #F8F9F9;
+  text-align: left;
 }
 #ply2{
   background-color: #F1F6E6;
@@ -24,6 +34,6 @@ h1{
 }
 footer{
   text-align: center;
-  margin-top: 30%;
-  color: white;
+  padding-top: 10%;
+  color: #F8F9F9;
 }
