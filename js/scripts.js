@@ -38,6 +38,14 @@ Player.prototype.winnerCheck = function() {
 if (this.totalscore >= 100) {
 alert(this.playerName + " your are the current winner!");
 }
+}
+
+Player.prototype.newGame = function() {
+this.roll = 0;
+this.tempscore = 0;
+this.totalscore = 0;
+this.playerName = "";
+}
 
 
 
