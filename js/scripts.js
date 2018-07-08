@@ -14,7 +14,7 @@ this.turn = turn;
 this.playerName;
 }
 
-// prototype
+// checking for roll  one
 Player.prototype.rollone = function() {
 if (this.roll === 1) {
 this.tempscore = 0;
@@ -24,6 +24,15 @@ alert("Sorry " + this.playerName + "your is over!")
 else {
 this.tempscore += this.roll;
 }
+}
+
+// checking for hold the dice
+Player.prototype.hold = function() {
+this.totalscore += this.tempscore;
+this.tempscore = 0;
+alert(this.playerName + "sorry pass over");
+}
+
 
 
 
