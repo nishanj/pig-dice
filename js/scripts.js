@@ -47,9 +47,10 @@ this.totalscore = 0;
 this.playerName = "";
 }
 
-
-
-
-
-
 // UI Logic
+$(document).ready(function(){
+  $("#start").click(function(event){
+    event.preventDefault();
+
+  })
+})
