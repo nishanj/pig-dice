@@ -15,7 +15,7 @@ this.playerName;
 }
 
 // checking for roll  one
-Player.prototype.rollone = function() {
+Player.prototype.rollCheck = function() {
 if (this.roll === 1) {
 this.tempscore = 0;
 alert("Sorry " + this.playerName + "your is over!")
@@ -27,11 +27,18 @@ this.tempscore += this.roll;
 }
 
 // checking for hold the dice
-Player.prototype.hold = function() {
+Player.prototype.holdCheck = function() {
 this.totalscore += this.tempscore;
 this.tempscore = 0;
 alert(this.playerName + "sorry pass over");
 }
+
+// checking for winner
+Player.prototype.winnerCheck = function() {
+if (this.totalscore >= 100) {
+alert(this.playerName + " your are the current winner!");
+}
+
 
 
 
