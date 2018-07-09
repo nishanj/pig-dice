@@ -6,6 +6,8 @@ var rollDice = function() {
 return Math.floor(6 * Math.random()) + 1;
 }
 
+// use of constructor: roll,tempscore& totalscore is equal 0 since am applying
+// math.floor to generate rondom number
 function Player(roll, tempscore, totalscore, turn) {
 this.roll = 0;
 this.tempscore = 0;
@@ -15,11 +17,11 @@ this.playerName;
 }
 
 // prototype Logic
-// checking for roll  one
+// checking for roll  one using new object (rollCheck)
 Player.prototype.rollCheck = function() {
 if (this.roll === 1) {
 this.tempscore = 0;
-alert("Sorry " + this.playerName + " " +"your turn is over!")
+alert("Sorry " + this.playerName + " " + "your turn is over!")
 }
 
 else {
@@ -41,6 +43,7 @@ alert(this.playerName +  " " +" your are the current winner!");
 }
 }
 
+// new game is target to 0
 Player.prototype.newGame = function() {
 this.roll = 0;
 this.tempscore = 0;
@@ -48,7 +51,7 @@ this.totalscore = 0;
 this.playerName = "";
 }
 
-var clearValues = function(){
+var newValue = function(){
 $(".player-name-1").val("");
 $(".player-name-2").val("");
 }
@@ -77,7 +80,7 @@ $(document).ready(function(){
 });
     $("#new-game").click(function(event){
     $("#game-selector").hide();
-    ClearValues();
+    newValue();
 
     playerA.newGame();
     playerB.newGame();
