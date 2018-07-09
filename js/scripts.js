@@ -51,7 +51,7 @@ this.totalscore = 0;
 this.playerName = "";
 }
 
-var newValue = function(){
+var newValues = function(){
 $(".player-name-1").val("");
 $(".player-name-2").val("");
 }
@@ -65,7 +65,7 @@ $(document).ready(function(){
     playerA = new Player(true);
     playerB = new Player(false);
 
-    $("#game-selector").show();
+    $("#game-selector").hide();
     $("#bdy").hide();
 
     var player1Name = $(".player-name-1").val();
@@ -79,8 +79,8 @@ $(document).ready(function(){
 
 });
     $("#new-game").click(function(event){
-    $("#game-selector").hide();
-    newValue();
+    $("#game-game").show();
+    newValues();
 
     playerA.newGame();
     playerB.newGame();
