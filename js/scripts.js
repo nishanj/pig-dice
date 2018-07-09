@@ -79,7 +79,7 @@ $(document).ready(function(){
 
 });
     $("#new-game").click(function(event){
-    $("#game-selector").show();
+    $("#game-selector").hide();
     newValues();
 
     playerA.newGame();
