@@ -65,7 +65,7 @@ $(document).ready(function(){
     playerA = new Player(true);
     playerB = new Player(false);
 
-    $("#game-selector").hide();
+    $("#game-selector").show();
     $("#bdy").hide();
 
     var player1Name = $(".player-name-1").val();
@@ -79,7 +79,7 @@ $(document).ready(function(){
 
 });
     $("#new-game").click(function(event){
-    $("#game-game").show();
+    $("#game-selector").show();
     newValues();
 
     playerA.newGame();
