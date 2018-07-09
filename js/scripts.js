@@ -19,7 +19,7 @@ this.playerName;
 Player.prototype.rollCheck = function() {
 if (this.roll === 1) {
 this.tempscore = 0;
-alert("Sorry " + this.playerName + "your is over!")
+alert("Sorry " + this.playerName + " " +"your turn is over!")
 }
 
 else {
@@ -31,13 +31,13 @@ this.tempscore += this.roll;
 Player.prototype.holdCheck = function() {
 this.totalscore += this.tempscore;
 this.tempscore = 0;
-alert(this.playerName + "sorry pass over");
+alert(this.playerName + " " + "sorry pass over");
 }
 
 // checking for winner
 Player.prototype.winnerCheck = function() {
 if (this.totalscore >= 100) {
-alert(this.playerName + " your are the current winner!");
+alert(this.playerName +  " " +" your are the current winner!");
 }
 }
 
